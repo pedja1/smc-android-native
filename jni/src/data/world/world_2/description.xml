@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<description >
+    <world >
+        <property name="name" value="World 2" />
+        <property name="visible" value="0" />
+    </world>
+</description>

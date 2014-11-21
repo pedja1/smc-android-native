@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overworld>
+	<information>
+		<property name="game_version" value="2" />
+		<property name="engine_version" value="4" />
+		<property name="save_time" value="1283390195" />
+	</information>
+	<settings>
+		<property name="music" value="overworld/land_1.ogg" />
+	</settings>
+	<background>
+		<property name="color_red" value="60" />
+		<property name="color_green" value="180" />
+		<property name="color_blue" value="0" />
+	</background>
+	<player>
+		<property name="waypoint" value="0" />
+		<property name="moving_state" value="0" />
+	</player>
+	<sprite>
+		<property name="posx" value="534" />
+		<property name="posy" value="-468" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="650" />
+		<property name="posy" value="-468" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="592" />
+		<property name="posy" value="-468" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="632" />
+		<property name="posy" value="-649" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="422" />
+		<property name="posy" value="-646" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="485" />
+		<property name="posy" value="-646" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="800" />
+		<property name="posy" value="-423" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="386" />
+		<property name="posy" value="-470" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="450" />
+		<property name="posy" value="-470" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="637" />
+		<property name="posy" value="-234" />
+		<property name="image" value="world/way/yellow_1/updown.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="552" />
+		<property name="posy" value="-182" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="488" />
+		<property name="posy" value="-182" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="314" />
+		<property name="posy" value="-182" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="377" />
+		<property name="posy" value="-182" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="523" />
+		<property name="posy" value="-577" />
+		<property name="image" value="world/objects/plants/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="262" />
+		<property name="posy" value="-395" />
+		<property name="image" value="world/objects/hill/bluegreen_stone_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="435" />
+		<property name="posy" value="-182" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<waypoint>
+		<property name="x" value="269" />
+		<property name="y" value="-312" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_1" />
+		<property name="direction_backward" value="first" />
+		<property name="direction_forward" value="down" />
+		<property name="access" value="1" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="269" />
+		<property name="y" value="-160" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_2" />
+		<property name="direction_backward" value="up" />
+		<property name="direction_forward" value="right" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="452" />
+		<property name="y" value="-160" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_3" />
+		<property name="direction_backward" value="left" />
+		<property name="direction_forward" value="right" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="654" />
+		<property name="y" value="-160" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_4" />
+		<property name="direction_backward" value="left" />
+		<property name="direction_forward" value="up" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="654" />
+		<property name="y" value="-260" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_5" />
+		<property name="direction_backward" value="down" />
+		<property name="direction_forward" value="right" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="784" />
+		<property name="y" value="-367" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_6" />
+		<property name="direction_backward" value="down" />
+		<property name="direction_forward" value="up" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="755" />
+		<property name="y" value="-449" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_7" />
+		<property name="direction_backward" value="down" />
+		<property name="direction_forward" value="left" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="509" />
+		<property name="y" value="-449" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_9" />
+		<property name="direction_backward" value="right" />
+		<property name="direction_forward" value="left" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="378" />
+		<property name="y" value="-449" />
+		<property name="type" value="1" />
+		<property name="destination" value="pasol_3" />
+		<property name="direction_backward" value="right" />
+		<property name="direction_forward" value="up" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="378" />
+		<property name="y" value="-626" />
+		<property name="type" value="1" />
+		<property name="destination" value="stephane_1" />
+		<property name="direction_backward" value="down" />
+		<property name="direction_forward" value="right" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="524" />
+		<property name="y" value="-626" />
+		<property name="type" value="1" />
+		<property name="destination" value="tower_1" />
+		<property name="direction_backward" value="left" />
+		<property name="direction_forward" value="right" />
+		<property name="access" value="0" />
+	</waypoint>
+	<waypoint>
+		<property name="x" value="676" />
+		<property name="y" value="-626" />
+		<property name="type" value="2" />
+		<property name="destination" value="world_2" />
+		<property name="direction_backward" value="left" />
+		<property name="direction_forward" value="last" />
+		<property name="access" value="0" />
+	</waypoint>
+	<sprite>
+		<property name="posx" value="0" />
+		<property name="posy" value="-590" />
+		<property name="image" value="world/objects/extra/compass_rose.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="398" />
+		<property name="posy" value="-421" />
+		<property name="image" value="world/objects/lake/lake_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="817" />
+		<property name="posy" value="-457" />
+		<property name="image" value="world/objects/hill/bluegreen_small.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="590" />
+		<property name="posy" value="-380" />
+		<property name="image" value="world/objects/hill/bluegreen_stone_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="707" />
+		<property name="posy" value="-408" />
+		<property name="image" value="world/objects/hill/bluegreen_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="706" />
+		<property name="posy" value="-229" />
+		<property name="image" value="world/objects/hill/bluegreen_small.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="541" />
+		<property name="posy" value="-142" />
+		<property name="image" value="world/objects/pipe/green_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="572" />
+		<property name="posy" value="-219" />
+		<property name="image" value="world/objects/pipe/blue_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="430" />
+		<property name="posy" value="-142" />
+		<property name="image" value="world/objects/pipe/green_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="342" />
+		<property name="posy" value="-206" />
+		<property name="image" value="world/objects/pipe/green_small.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="413" />
+		<property name="posy" value="-232" />
+		<property name="image" value="world/objects/pipe/green_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="483" />
+		<property name="posy" value="-114" />
+		<property name="image" value="world/objects/pipe/yellow_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="499" />
+		<property name="posy" value="-114" />
+		<property name="image" value="world/objects/pipe/yellow_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="246" />
+		<property name="posy" value="-242" />
+		<property name="image" value="world/objects/pipe/green_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="361" />
+		<property name="posy" value="-309" />
+		<property name="image" value="world/objects/pipe/blue_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="820" />
+		<property name="posy" value="-316" />
+		<property name="image" value="world/objects/pipe/green_small.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="463" />
+		<property name="posy" value="-562" />
+		<property name="image" value="world/objects/cloud/light_blue/medium_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="611" />
+		<property name="posy" value="-560" />
+		<property name="image" value="world/objects/cloud/light_blue/medium_2.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="328" />
+		<property name="posy" value="-573" />
+		<property name="image" value="world/objects/cloud/light_blue/small_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="416" />
+		<property name="posy" value="-400" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="363" />
+		<property name="posy" value="-193" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="195" />
+		<property name="posy" value="-300" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="433" />
+		<property name="posy" value="-272" />
+		<property name="image" value="world/objects/wheels/wind_wheel.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="484" />
+		<property name="posy" value="-266" />
+		<property name="image" value="world/objects/wheels/wind_wheel.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="533" />
+		<property name="posy" value="-256" />
+		<property name="image" value="world/objects/wheels/wind_wheel.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="268" />
+		<property name="posy" value="-478" />
+		<property name="image" value="world/objects/pipe/green_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="728" />
+		<property name="posy" value="-502" />
+		<property name="image" value="world/objects/pipe/blue_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="639" />
+		<property name="posy" value="-283" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="493" />
+		<property name="posy" value="-469" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="362" />
+		<property name="posy" value="-469" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="666" />
+		<property name="posy" value="-575" />
+		<property name="image" value="world/objects/cloud/light_blue/small_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="437" />
+		<property name="posy" value="-461" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="710" />
+		<property name="posy" value="-113" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="657" />
+		<property name="posy" value="-304" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="897" />
+		<property name="posy" value="-317" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="788" />
+		<property name="posy" value="-124" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="858" />
+		<property name="posy" value="-349" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="182" />
+		<property name="posy" value="-609" />
+		<property name="image" value="world/objects/cloud/light_blue/small_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="164" />
+		<property name="posy" value="-328" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="186" />
+		<property name="posy" value="-213" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="888" />
+		<property name="posy" value="-593" />
+		<property name="image" value="world/objects/cloud/light_blue/small_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="876" />
+		<property name="posy" value="-449" />
+		<property name="image" value="world/objects/hill/blue_big_left.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="795" />
+		<property name="posy" value="-505" />
+		<property name="image" value="world/objects/hill/blue_big_right.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="774" />
+		<property name="posy" value="-233" />
+		<property name="image" value="world/objects/mushroom/mushroom_left.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="841" />
+		<property name="posy" value="-285" />
+		<property name="image" value="world/objects/mushroom/mushroom_right.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="214" />
+		<property name="posy" value="-372" />
+		<property name="image" value="world/objects/hill/bluegreen_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="307" />
+		<property name="posy" value="-375" />
+		<property name="image" value="world/objects/hill/bluegreen_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="394" />
+		<property name="posy" value="-343" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="431" />
+		<property name="posy" value="-317" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="165" />
+		<property name="posy" value="-551" />
+		<property name="image" value="world/objects/cloud/light_blue/medium_2.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="529" />
+		<property name="posy" value="-300" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="593" />
+		<property name="posy" value="-299" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="578" />
+		<property name="posy" value="-132" />
+		<property name="image" value="world/objects/pipe/green_small.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="738" />
+		<property name="posy" value="-190" />
+		<property name="image" value="world/objects/hill/bluegreen_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="724" />
+		<property name="posy" value="-308" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="833" />
+		<property name="posy" value="-481" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="654" />
+		<property name="posy" value="-487" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="420" />
+		<property name="posy" value="-506" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="342" />
+		<property name="posy" value="-121" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<waypoint>
+		<property name="x" value="605" />
+		<property name="y" value="-449" />
+		<property name="type" value="1" />
+		<property name="destination" value="lvl_8" />
+		<property name="direction_backward" value="right" />
+		<property name="direction_forward" value="left" />
+		<property name="access" value="0" />
+	</waypoint>
+	<sprite>
+		<property name="posx" value="714" />
+		<property name="posy" value="-468" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="616" />
+		<property name="posy" value="-182" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="354" />
+		<property name="posy" value="-257" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="252" />
+		<property name="posy" value="-239" />
+		<property name="image" value="world/way/yellow_1/updown.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="252" />
+		<property name="posy" value="-303" />
+		<property name="image" value="world/way/yellow_1/updown.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="255" />
+		<property name="posy" value="-334" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="255" />
+		<property name="posy" value="-182" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="243" />
+		<property name="posy" value="-155" />
+		<property name="image" value="world/objects/pipe/yellow_big.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="362" />
+		<property name="posy" value="-648" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="568" />
+		<property name="posy" value="-649" />
+		<property name="image" value="world/way/yellow_1/leftright.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="508" />
+		<property name="posy" value="-648" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="660" />
+		<property name="posy" value="-648" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="361" />
+		<property name="posy" value="-590" />
+		<property name="image" value="world/way/yellow_1/updown.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="361" />
+		<property name="posy" value="-527" />
+		<property name="image" value="world/way/yellow_1/updown.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="309" />
+		<property name="posy" value="-489" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="323" />
+		<property name="posy" value="-533" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="505" />
+		<property name="posy" value="-256" />
+		<property name="image" value="world/objects/wheels/wind_wheel.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="456" />
+		<property name="posy" value="-266" />
+		<property name="image" value="world/objects/wheels/wind_wheel.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="179" />
+		<property name="posy" value="-744" />
+		<property name="image" value="world/objects/cloud/light_blue/small_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="431" />
+		<property name="posy" value="-725" />
+		<property name="image" value="world/objects/cloud/light_blue/small_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="324" />
+		<property name="posy" value="-696" />
+		<property name="image" value="world/objects/cloud/light_blue/medium_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="374" />
+		<property name="posy" value="-724" />
+		<property name="image" value="world/objects/cloud/light_blue/medium_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="736" />
+		<property name="posy" value="-768" />
+		<property name="image" value="world/objects/cloud/light_blue/medium_2.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="588" />
+		<property name="posy" value="-734" />
+		<property name="image" value="world/objects/cloud/light_blue/medium_2.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="650" />
+		<property name="posy" value="-769" />
+		<property name="image" value="world/objects/cloud/light_blue/small_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="446" />
+		<property name="posy" value="-694" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="597" />
+		<property name="posy" value="-666" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="266" />
+		<property name="posy" value="-624" />
+		<property name="image" value="world/objects/hedge/green_1.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="511" />
+		<property name="posy" value="-684" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="654" />
+		<property name="posy" value="-686" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="763" />
+		<property name="posy" value="-605" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="741" />
+		<property name="posy" value="-655" />
+		<property name="image" value="world/objects/stone/stone.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="639" />
+		<property name="posy" value="-184" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+	<sprite>
+		<property name="posx" value="739" />
+		<property name="posy" value="-471" />
+		<property name="image" value="world/way/yellow_1/point.png" />
+		<property name="type" value="passive" />
+	</sprite>
+</overworld>

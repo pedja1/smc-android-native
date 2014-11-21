@@ -1,0 +1,12 @@
+export ANDROID_SDK=$HOME/local/android-sdk-linux
+export ANDROID_NDK=$HOME/local/android-ndk-r9
+export ANDROID_TOOLCHAIN_ROOT=$HOME/local/android-toolchain/
+
+PATH="$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools:$ANDROID_NDK"
+
+export ANDROID_ABI=armeabi-v7a
+export ANDROID_CC="$ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-gcc"
+export ANDROID_CXX="$ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-g++"
+export ANDROID_AR="$ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-ar"
+
+export NDK_TOOLCHAIN_VERSION=4.8

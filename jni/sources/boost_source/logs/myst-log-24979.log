@@ -1,0 +1,9 @@
+##### NEW COMMAND
+/usr/bin/wget -O /home/pedja/workspace/Boost-for-Android/boost_1_53_0.tar.bz2 http://downloads.sourceforge.net/project/boost/boost/1.53.0/boost_1_53_0.tar.bz2?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fboost%2Ffiles%2Fboost%2F1.53.0%2F&ts=1291326673&use_mirror=garr
+--2014-11-21 08:47:18--  http://downloads.sourceforge.net/project/boost/boost/1.53.0/boost_1_53_0.tar.bz2?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fboost%2Ffiles%2Fboost%2F1.53.0%2F&ts=1291326673&use_mirror=garr
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://garr.dl.sourceforge.net/project/boost/boost/1.53.0/boost_1_53_0.tar.bz2 [following]
+--2014-11-21 08:47:19--  http://garr.dl.sourceforge.net/project/boost/boost/1.53.0/boost_1_53_0.tar.bz2
+Resolving garr.dl.sourceforge.net (garr.dl.sourceforge.net)... 

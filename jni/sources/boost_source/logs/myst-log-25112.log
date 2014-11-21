@@ -1,0 +1,4 @@
+Applying boost-1_53_0.patch into /home/pedja/workspace/Boost-for-Android/boost_1_53_0/.
+ERROR: Patch failure !! Please check your patches directory!
+       Try to perform a clean build using --clean .
+       Problem patch: /home/pedja/workspace/Boost-for-Android/patches/boost-1_53_0/boost-1_53_0.patch
