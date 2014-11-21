@@ -4,17 +4,22 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := main
 
-SDL_PATH := ../SDL
+LOCAL_SRC_FILES := main.cpp \
+	$(subst $(LOCAL_PATH)/,, \
+	$(wildcard $(LOCAL_PATH)/src/core/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/core/filesystem/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/core/math/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/enemies/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/enemies/bosses*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/gui/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/input/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/level/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/objects/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/owerworld/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/user/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/video/*.cpp) \
+	$(wildcard $(LOCAL_PATH)/src/audio/*.cpp))
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SDL_PATH)/include
+LOCAL_STATIC_LIBRARIES := SDL2_static
 
-# Add your application source files here...
-LOCAL_SRC_FILES := $(SDL_PATH)/src/main/android/SDL_android_main.c \
-$(patsubst $(LOCAL_PATH)/%, %, $(wildcard $(LOCAL_PATH)/src/*.cpp)) \
-$(patsubst $(LOCAL_PATH)/%, %, $(wildcard $(LOCAL_PATH)/src/*.c))
-
-LOCAL_SHARED_LIBRARIES := SDL2
-
-LOCAL_LDLIBS := -lGLESv1_CM -lGLESv2 -llog
-
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
