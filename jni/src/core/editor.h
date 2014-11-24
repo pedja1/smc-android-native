@@ -52,7 +52,7 @@ public:
 class cEditor_CEGUI_Texture : public CEGUI::OpenGLESTexture
 {
 public:
-	cEditor_CEGUI_Texture( CEGUI::OpenGLESRenderer& owner, GLuint tex, const CEGUI::Size<uint>& size );
+	cEditor_CEGUI_Texture( CEGUI::OpenGLESRenderer& owner, const CEGUI::String &name, GLuint tex, const CEGUI::Size<float>& size );
 	~cEditor_CEGUI_Texture( void );
 
 	void cleanupOpenGLTexture( void );

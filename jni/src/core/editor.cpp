@@ -63,8 +63,8 @@ cEditor_Object_Settings_Item :: ~cEditor_Object_Settings_Item( void )
 
 /* *** *** *** *** *** *** *** *** cEditor_CEGUI_Texture *** *** *** *** *** *** *** *** *** */
 
-cEditor_CEGUI_Texture :: cEditor_CEGUI_Texture( CEGUI::OpenGLESRenderer& owner, GLuint tex, const CEGUI::Size<uint>& size )
-: CEGUI::OpenGLESTexture( owner, tex, size )
+cEditor_CEGUI_Texture :: cEditor_CEGUI_Texture( CEGUI::OpenGLESRenderer& owner, const CEGUI::String &name, GLuint tex, const CEGUI::Size<float>& size )
+: CEGUI::OpenGLESTexture( owner, name, tex, size )
 {
 
 }
@@ -146,8 +146,8 @@ void cEditor_Item_Object :: Init( cSprite *sprite )
 	preview_scale = pVideo->Get_Scale( sprite_obj->m_start_image, static_cast<float>(pPreferences->m_editor_item_image_size) * 2.0f, static_cast<float>(pPreferences->m_editor_item_image_size) );
 
 	// create CEGUI link
-	cEditor_CEGUI_Texture *texture = new cEditor_CEGUI_Texture( *pGuiRenderer, sprite_obj->m_start_image->m_image, CEGUI::Size( sprite_obj->m_start_image->m_tex_w, sprite_obj->m_start_image->m_tex_h ) );
 	CEGUI::String imageset_name = "editor_item " + list_text->getText() + " " + CEGUI::PropertyHelper<uint>::toString( m_parent->getItemCount() );
+	cEditor_CEGUI_Texture *texture = new cEditor_CEGUI_Texture( *pGuiRenderer, imageset_name, sprite_obj->m_start_image->m_image, CEGUI::Size( sprite_obj->m_start_image->m_tex_w, sprite_obj->m_start_image->m_tex_h ) );
 	m_image = &CEGUI::ImageManager::getSingleton().create("BasicImage", imageset_name/*, *texture*/ );
 	m_image->setTexture(texture);
 	//m_image->defineImage( "default", CEGUI::Point(0, 0), texture->getSize(), CEGUI::Point(0, 0) );
