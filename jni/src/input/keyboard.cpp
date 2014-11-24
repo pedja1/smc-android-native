@@ -61,7 +61,7 @@ bool cKeyboard :: CEGUI_Handle_Key_Up( SDLKey key ) const
 	return 0;
 }
 
-bool cKeyboard :: Key_Up( SDLKey key )
+bool cKeyboard :: Key_Up( SDL_Keycode key )
 {
 	// set key to 0
 	m_keys[key] = 0;
@@ -93,7 +93,7 @@ bool cKeyboard :: Key_Up( SDLKey key )
 	return 0;
 }
 
-bool cKeyboard :: CEGUI_Handle_Key_Down( SDLKey key ) const
+bool cKeyboard :: CEGUI_Handle_Key_Down( SDL_Keycode key ) const
 {
 	// inject the scancode
 	if( pGuiSystem->injectKeyDown( SDLKey_to_CEGUIKey( key ) ) == 1 )
@@ -115,7 +115,7 @@ bool cKeyboard :: CEGUI_Handle_Key_Down( SDLKey key ) const
 	return 0;
 }
 
-bool cKeyboard :: Key_Down( SDLKey key )
+bool cKeyboard :: Key_Down( SDL_Keycode key )
 {
 	// input was processed by the gui system
 	if( CEGUI_Handle_Key_Down( key ) )
