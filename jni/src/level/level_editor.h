@@ -30,6 +30,11 @@ public:
 	cEditor_Level( cSprite_Manager *sprite_manager, cLevel *level );
 	virtual ~cEditor_Level( void );
 
+    const CEGUI::String& getDefaultResourceGroup() const
+    {
+        return NULL;
+    }
+
 	// Initialize
 	virtual void Init( void );
 
@@ -44,7 +49,7 @@ public:
 	/* handle key down event
 	 * returns true if the key was processed
 	*/
-	virtual bool Key_Down( SDLKey key );
+	virtual bool Key_Down( SDL_Keycode key );
 
 	// Set the parent level
 	void Set_Level( cLevel *level );

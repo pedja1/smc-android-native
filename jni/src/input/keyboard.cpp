@@ -49,7 +49,7 @@ void cKeyboard :: Reset_Keys( void )
 	memset( m_keys, 0, sizeof( m_keys ) );
 }
 
-bool cKeyboard :: CEGUI_Handle_Key_Up( SDLKey key ) const
+bool cKeyboard :: CEGUI_Handle_Key_Up( SDL_Keycode key ) const
 {
 	// inject the scancode directly
 	if( pGuiSystem->injectKeyUp( SDLKey_to_CEGUIKey( key ) ) )
@@ -306,7 +306,7 @@ bool cKeyboard :: Key_Down( SDL_Keycode key )
 	return 0;
 }
 
-unsigned int cKeyboard :: SDLKey_to_CEGUIKey( const SDLKey key ) const
+unsigned int cKeyboard :: SDLKey_to_CEGUIKey( const SDL_Keycode key ) const
 {
     switch( key )
     {

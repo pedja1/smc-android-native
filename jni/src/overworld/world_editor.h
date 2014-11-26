@@ -29,6 +29,11 @@ public:
 	cEditor_World( cSprite_Manager *sprite_manager, cOverworld *overworld );
 	virtual ~cEditor_World( void );
 
+    const CEGUI::String& getDefaultResourceGroup() const
+    {
+        return NULL;
+    }
+
 	// Initialize
 	virtual void Init( void );
 
@@ -42,7 +47,7 @@ public:
 	/* handle key down event
 	 * returns true if the key was processed
 	*/
-	virtual bool Key_Down( SDLKey key );
+	virtual bool Key_Down( SDL_Keycode key );
 
 	// Set the parent overworld
 	void Set_Overworld( cOverworld *overworld );

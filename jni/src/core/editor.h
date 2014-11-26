@@ -26,6 +26,8 @@
 #include "CEGUI/widgets/Listbox.h"
 #include "CEGUI/widgets/ListboxTextItem.h"
 #include "CEGUI/RendererModules/OpenGLES/Texture.h"
+#include "CEGUI/ImageManager.h"
+#include "CEGUI/BasicImage.h"
 
 namespace SMC
 {
@@ -79,7 +81,7 @@ public:
 	// text
 	CEGUI::ListboxTextItem *list_text;
 	// cegui image
-	CEGUI::Image *m_image;
+	CEGUI::BasicImage *m_image;
 	// sprite
 	cSprite *sprite_obj;
 	// preview image scale

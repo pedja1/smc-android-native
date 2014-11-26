@@ -33,6 +33,11 @@ class cPreferences : public CEGUI::XMLHandler
 public:
 	cPreferences( void );
 	virtual ~cPreferences( void );
+
+    const CEGUI::String& getDefaultResourceGroup() const
+    {
+        return NULL;
+    }
 	
 	// Load the preferences from a file
 	bool Load( const std::string &filename = "" );

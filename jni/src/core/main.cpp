@@ -45,7 +45,7 @@
 #endif
 
 // CEGUI
-#include "CEGUIDefaultLogger.h"
+#include "CEGUI/DefaultLogger.h"
 
 // SMC namespace is set later to exclude main() from it
 using namespace SMC;
@@ -209,9 +209,9 @@ int main( int argc, char **argv )
 		Game_Action_Data_Middle.add( "load_menu", int_to_string( MENU_MAIN ) );
 	}
 
-	Game_Action_Data_Start.add( "screen_fadeout", CEGUI::PropertyHelper::intToString( EFFECT_OUT_BLACK ) );
+	Game_Action_Data_Start.add( "screen_fadeout", CEGUI::PropertyHelper<int>::toString( EFFECT_OUT_BLACK ) );
 	Game_Action_Data_Start.add( "screen_fadeout_speed", "3" );
-	Game_Action_Data_End.add( "screen_fadein", CEGUI::PropertyHelper::intToString( EFFECT_IN_BLACK ) );
+	Game_Action_Data_End.add( "screen_fadein", CEGUI::PropertyHelper<int>::toString( EFFECT_IN_BLACK ) );
 	Game_Action_Data_End.add( "screen_fadein_speed", "3" );
 
 	// game loop
@@ -507,7 +507,7 @@ void Exit_Game( void )
 		pResource_Manager = NULL;
 	}
 
-	char *last_sdl_error = SDL_GetError();
+	char const *last_sdl_error = SDL_GetError();
 	if( strlen( last_sdl_error ) > 0 )
 	{
 		printf( "Last known SDL Error : %s\n", last_sdl_error );
@@ -531,7 +531,7 @@ bool Handle_Input_Global( SDL_Event *ev )
 			// handle on all handlers ?
 			return 0;
 		}
-		case SDL_VIDEORESIZE:
+		case /*SDL_VIDEORESIZE*/SDL_WINDOWEVENT_RESIZE:
 		{
 			pGuiSystem->notifyDisplaySizeChanged( CEGUI::Size( static_cast<float>(ev->resize.w), static_cast<float>(ev->resize.h) ) );
 			break;

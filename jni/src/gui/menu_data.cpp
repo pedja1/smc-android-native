@@ -2201,8 +2201,8 @@ void cMenu_Options :: Build_Shortcut_List( bool joystick /* = 0 */ )
 		// Keyboard
 		if( !joystick )
 		{
-			SDLKey *key = static_cast<SDLKey *>(shortcut_item.m_key);
-			const SDLKey *key_default = static_cast<const SDLKey *>(shortcut_item.m_key_default);
+			SDL_Keycode *key = static_cast<SDL_Keycode *>(shortcut_item.m_key);
+			const SDL_Keycode *key_default = static_cast<const SDL_Keycode *>(shortcut_item.m_key_default);
 			shortcut_key = SDL_GetKeyName( *key );
 
 			if( *key != *key_default )
@@ -2281,7 +2281,7 @@ void cMenu_Options :: Set_Shortcut( std::string name, void *data, bool joystick 
 		// Keyboard
 		if( !joystick )
 		{
-			SDLKey *key = static_cast<SDLKey *>(data);
+			SDL_Keycode *key = static_cast<SDL_Keycode *>(data);
 			*key = input_event.key.keysym.sym;
 		}
 		// Joystick

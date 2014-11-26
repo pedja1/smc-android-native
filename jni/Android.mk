@@ -46,8 +46,8 @@ LOCAL_SRC_FILES := boost/lib/armeabi-v7a/libboost_thread-gcc-mt-1_55.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE    := libintl-lite
-LOCAL_SRC_FILES := libintl-lite/lib/armeabi-v7a/libintl.a
+LOCAL_MODULE    := libintl
+LOCAL_SRC_FILES := libintl/lib/armeabi-v7a/libintl.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -102,7 +102,7 @@ LOCAL_STATIC_LIBRARIES := SDL2_static \
 	boost_system \
 	boost_atomic \
 	boost_filesystem \
-	libintl-lite
+	libintl
 LOCAL_STATIC_LIBRARIES := android_native_app_glue 
 LOCAL_SHARED_LIBRARIES := libiconv
 

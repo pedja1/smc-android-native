@@ -95,7 +95,7 @@ cEditor_Item_Object :: cEditor_Item_Object( const std::string &text, const CEGUI
 : CEGUI::ListboxItem( "" )
 {
 	m_parent = parent;
-	list_text = new CEGUI::ListboxTextItem( reinterpret_cast<const CEGUI::utf8*>(text.c_str()) );
+	list_text = new CEGUI::ListboxTextItem( /*reinterpret_cast<const CEGUI::utf8*>(text.c_str())*/text );
 	list_text->setSelectionColours( CEGUI::Colour( 0.33f, 0.33f, 0.33f ) );
 	list_text->setSelectionBrushImage( "TaharezLook"/*, "ListboxSelectionBrush"*/ );
 
@@ -147,15 +147,15 @@ void cEditor_Item_Object :: Init( cSprite *sprite )
 
 	// create CEGUI link
 	CEGUI::String imageset_name = "editor_item " + list_text->getText() + " " + CEGUI::PropertyHelper<uint>::toString( m_parent->getItemCount() );
-	cEditor_CEGUI_Texture *texture = new cEditor_CEGUI_Texture( *pGuiRenderer, imageset_name, sprite_obj->m_start_image->m_image, CEGUI::Size( sprite_obj->m_start_image->m_tex_w, sprite_obj->m_start_image->m_tex_h ) );
-	m_image = &CEGUI::ImageManager::getSingleton().create("BasicImage", imageset_name/*, *texture*/ );
+	cEditor_CEGUI_Texture *texture = new cEditor_CEGUI_Texture( *pGuiRenderer, imageset_name, sprite_obj->m_start_image->m_image, CEGUI::Sizef( sprite_obj->m_start_image->m_tex_w, sprite_obj->m_start_image->m_tex_h ) );
+	m_image = (CEGUI::BasicImage *) &CEGUI::ImageManager::getSingleton().create("BasicImage", imageset_name/*, *texture*/ );
 	m_image->setTexture(texture);
 	//m_image->defineImage( "default", CEGUI::Point(0, 0), texture->getSize(), CEGUI::Point(0, 0) );
 }
 
 CEGUI::Sizef cEditor_Item_Object :: getPixelSize( void ) const
 {
-	CEGUI::Size tmp = list_text->getPixelSize();
+	CEGUI::Sizef tmp = list_text->getPixelSize();
 
 	if( pPreferences->m_editor_show_item_images )
 	{
