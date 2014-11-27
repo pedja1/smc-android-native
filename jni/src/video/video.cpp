@@ -30,19 +30,19 @@
 #include "../core/filesystem/resource_manager.h"
 #include "../gui/spinner.h"
 // SDL
-#include "SDL_opengl.h"
+#include "SDL_opengles.h"
 // CEGUI
-#include "CEGUIDefaultResourceProvider.h"
-#include "CEGUIDefaultLogger.h"
-#include "CEGUIExceptions.h"
-#include "CEGUIWindowFactoryManager.h"
-#include "CEGUIImagesetManager.h"
-#include "CEGUIFontManager.h"
-#include "CEGUIWindowManager.h"
-#include "CEGUISchemeManager.h"
-#include "falagard/CEGUIFalWidgetLookManager.h"
-#include "elements/CEGUIProgressBar.h"
-#include "RendererModules/Null/CEGUINullRenderer.h"
+#include "CEGUI/DefaultResourceProvider.h"
+#include "CEGUI/DefaultLogger.h"
+#include "CEGUI/Exceptions.h"
+#include "CEGUI/WindowFactoryManager.h"
+#include "CEGUI/ImageManager.h"
+#include "CEGUI/FontManager.h"
+#include "CEGUI/WindowManager.h"
+#include "CEGUI/SchemeManager.h"
+#include "CEGUI/falagard/WidgetLookManager.h"
+#include "CEGUI/widgets/ProgressBar.h"
+#include "CEGUI/RendererModules/Null/Renderer.h"
 // png
 #include <png.h>
 #ifndef PNG_COLOR_TYPE_RGBA
@@ -123,7 +123,7 @@ void cVideo :: Init_CEGUI( void ) const
 	// create renderer
 	try
 	{
-		pGuiRenderer = &CEGUI::OpenGLRenderer::create( CEGUI::Size( screen->w, screen->h ) );
+		pGuiRenderer = &CEGUI::OpenGLESRenderer::create( CEGUI::Size( screen->w, screen->h ) );
 	}
 	// catch CEGUI Exceptions
 	catch( CEGUI::Exception &ex )
@@ -2489,7 +2489,7 @@ void Loading_Screen_Exit( void )
 
 cVideo *pVideo = NULL;
 
-CEGUI::OpenGLRenderer *pGuiRenderer = NULL;
+CEGUI::OpenGLESRenderer *pGuiRenderer = NULL;
 CEGUI::System *pGuiSystem = NULL;
 
 SDL_Surface *screen = NULL;

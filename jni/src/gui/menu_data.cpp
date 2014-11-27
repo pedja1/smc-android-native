@@ -38,18 +38,18 @@
 // CEGUI
 #include "CEGUIWindowManager.h"
 #include "CEGUIFontManager.h"
-#include "elements/CEGUITabControl.h"
-#include "elements/CEGUIPushButton.h"
-#include "elements/CEGUIEditbox.h"
-#include "elements/CEGUICombobox.h"
-#include "elements/CEGUISpinner.h"
-#include "elements/CEGUIMultiLineEditbox.h"
-#include "elements/CEGUISlider.h"
+#include "CEGUI/widgets/TabControl.h"
+#include "CEGUI/widgets/PushButton.h"
+#include "CEGUI/widgets/Editbox.h"
+#include "CEGUI/widgets/Combobox.h"
+#include "CEGUI/widgets/Spinner.h"
+#include "CEGUI/widgets/MultiLineEditbox.h"
+#include "CEGUI/widgets/Slider.h"
 // unix hackfix : undef None from SDL_syswm.h
 #ifdef None
 	#undef None
 #endif
-#include "elements/CEGUIMultiColumnList.h"
+#include "CEGUI/widgets/MultiColumnList.h"
 
 namespace SMC
 {

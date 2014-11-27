@@ -27,15 +27,15 @@
 #include "../core/i18n.h"
 // CEGUI
 #include "CEGUIWindowManager.h"
-#include "elements/CEGUISpinner.h"
-#include "elements/CEGUIEditbox.h"
-#include "elements/CEGUICombobox.h"
-#include "elements/CEGUIMultiLineEditbox.h"
-#include "elements/CEGUIPushButton.h"
-#include "elements/CEGUITabControl.h"
-#include "elements/CEGUISlider.h"
-#include "elements/CEGUIListbox.h"
-#include "elements/CEGUIListboxTextItem.h"
+#include "CEGUI/widgets/Spinner.h"
+#include "CEGUI/widgets/Editbox.h"
+#include "CEGUI/widgets/Combobox.h"
+#include "CEGUI/widgets/MultiLineEditbox.h"
+#include "CEGUI/widgets/PushButton.h"
+#include "CEGUI/widgets/TabControl.h"
+#include "CEGUI/widgets/Slider.h"
+#include "CEGUI/widgets/Listbox.h"
+#include "CEGUI/widgets/ListboxTextItem.h"
 
 namespace SMC
 {

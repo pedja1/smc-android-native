@@ -26,8 +26,10 @@
 #include "../core/i18n.h"
 #include "../core/filesystem/filesystem.h"
 // CEGUI
-#include "CEGUIWindowManager.h"
-#include "CEGUIFontManager.h"
+#include "CEGUI/WindowManager.h"
+#include "CEGUI/FontManager.h"
+#include "../video/video.h"
+#include "../video/video.cpp"
 
 namespace SMC
 {
@@ -884,10 +886,10 @@ cDebugDisplay :: cDebugDisplay( cSprite_Manager *sprite_manager )
 	m_active_counter = -1;
 
 	// debug text window
-	m_window_debug_text = CEGUI::WindowManager::getSingleton().loadWindowLayout( "debugtext.layout" );
-	pGuiSystem->getGUISheet()->addChildWindow( m_window_debug_text );
+	m_window_debug_text = CEGUI::WindowManager::getSingleton().loadLayoutFromFile( "debugtext.layout" );
+    pGuiSystem->getDefaultGUIContext().getRootWindow()->addChild( m_window_debug_text );
 	// debug text
-	m_text_debug_text = static_cast<CEGUI::Window *>(CEGUI::WindowManager::getSingleton().getWindow( "text_debugmessage" ));
+	m_text_debug_text = static_cast<CEGUI::Window *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild( "text_debugmessage" ));
 	// hide
 	m_text_debug_text->setVisible( 0 );
 
@@ -932,7 +934,7 @@ cDebugDisplay :: cDebugDisplay( cSprite_Manager *sprite_manager )
 
 cDebugDisplay :: ~cDebugDisplay( void )
 {
-	pGuiSystem->getGUISheet()->removeChildWindow( m_window_debug_text );
+    pGuiSystem->getDefaultGUIContext().getRootWindow()->removeChild( m_window_debug_text );
 	CEGUI::WindowManager::getSingleton().destroyWindow( m_window_debug_text );
 
 	for( HudSpriteList::iterator itr = m_sprites.begin(); itr != m_sprites.end(); ++itr )
@@ -968,7 +970,7 @@ void cDebugDisplay :: Update( void )
 	if( m_text.compare( m_text_old ) != 0 )
 	{
 		m_text_old = m_text;
-		CEGUI::String gui_text = reinterpret_cast<const CEGUI::utf8*>(m_text.c_str());
+		CEGUI::String gui_text = (m_text.c_str());
 
 		// display the new text
 		m_text_debug_text->setText( gui_text );

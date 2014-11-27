@@ -531,9 +531,10 @@ bool Handle_Input_Global( SDL_Event *ev )
 			// handle on all handlers ?
 			return 0;
 		}
-		case /*SDL_VIDEORESIZE*/SDL_WINDOWEVENT_RESIZE:
+		case /*SDL_VIDEORESIZE*/SDL_WINDOWEVENT_RESIZED:
 		{
-			pGuiSystem->notifyDisplaySizeChanged( CEGUI::Size( static_cast<float>(ev->resize.w), static_cast<float>(ev->resize.h) ) );
+			//pGuiSystem->notifyDisplaySizeChanged( CEGUI::Sizef( static_cast<float>(ev->resize.w), static_cast<float>(ev->resize.h) ) );
+			pGuiSystem->notifyDisplaySizeChanged( CEGUI::Sizef( static_cast<float>(ev->window.data1), static_cast<float>(ev->window.data2) ) );
 			break;
 		}
 		case SDL_KEYDOWN:
@@ -578,7 +579,7 @@ bool Handle_Input_Global( SDL_Event *ev )
 			pJoystick->Handle_Motion( ev );
 			break;
 		}
-		case SDL_ACTIVEEVENT:
+		/*case SDL_ACTIVEEVENT://TODO handle focus lost
 		{
 			// lost visibility
 			if( ev->active.gain == 0 )
@@ -599,7 +600,7 @@ bool Handle_Input_Global( SDL_Event *ev )
 				return 1;
 			}
 			break;
-		}
+		}*/
 		default: // other events
 		{
 			// mouse

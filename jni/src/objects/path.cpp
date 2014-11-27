@@ -25,10 +25,10 @@
 #include "../objects/moving_platform.h"
 // CEGUI
 #include "CEGUIWindowManager.h"
-#include "elements/CEGUIEditbox.h"
-#include "elements/CEGUICombobox.h"
-#include "elements/CEGUIListboxTextItem.h"
-#include "elements/CEGUIPushButton.h"
+#include "CEGUI/widgets/Editbox.h"
+#include "CEGUI/widgets/Combobox.h"
+#include "CEGUI/widgets/ListboxTextItem.h"
+#include "CEGUI/widgets/PushButton.h"
 
 namespace SMC
 {

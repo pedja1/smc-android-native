@@ -28,7 +28,8 @@ namespace SMC
 // translates the string with gettext
 #define _(String) gettext(String)
 // translates the utf8 string with gettext
-#define UTF8_(String) reinterpret_cast<CEGUI::utf8*>(gettext(String))
+//#define UTF8_(String) reinterpret_cast<CEGUI::utf8*>(gettext(String))
+#define UTF8_(String) gettext(String)//TODO how to cast from CEGUI::utf8 to CEGUI::String?
 // not translated and only for gettext detection
 #define N_(String) String
 

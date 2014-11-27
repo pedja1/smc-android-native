@@ -29,8 +29,8 @@
 // CEGUI
 #include "CEGUIXMLAttributes.h"
 #include "CEGUIWindowManager.h"
-#include "elements/CEGUIListbox.h"
-#include "elements/CEGUIListboxItem.h"
+#include "CEGUI/widgets/Listbox.h"
+#include "CEGUI/widgets/ListboxItem.h"
 
 namespace SMC
 {

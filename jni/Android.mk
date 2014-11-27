@@ -51,14 +51,20 @@ LOCAL_SRC_FILES := libintl/lib/armeabi-v7a/libintl.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE    := libpng
+LOCAL_SRC_FILES := libpng/lib/armeabi-v7a/libpng.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/cegui/include \
 		$(LOCAL_PATH)/SDL2/include \
 		$(LOCAL_PATH)/SDL2_image/include \
 		$(LOCAL_PATH)/SDL2_mixer/include \
 		$(LOCAL_PATH)/SDL2_ttf/include \
-		$(LOCAL_PATH)/boost/include/boost-1_55 \
-		$(LOCAL_PATH)/libintl-lite/include
+		$(LOCAL_PATH)/boost/include \
+		$(LOCAL_PATH)/libintl/include \
+		$(LOCAL_PATH)/libpng/include
 
 LOCAL_MODULE := main
 
@@ -102,6 +108,7 @@ LOCAL_STATIC_LIBRARIES := SDL2_static \
 	boost_system \
 	boost_atomic \
 	boost_filesystem \
+	libpng \
 	libintl
 LOCAL_STATIC_LIBRARIES := android_native_app_glue 
 LOCAL_SHARED_LIBRARIES := libiconv

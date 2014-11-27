@@ -23,7 +23,7 @@
 #include "CEGUIXMLParser.h"
 #include "CEGUIWindowManager.h"
 #include "CEGUIExceptions.h"
-#include "elements/CEGUIEditbox.h"
+#include "CEGUI/widgets/Editbox.h"
 
 namespace SMC
 {

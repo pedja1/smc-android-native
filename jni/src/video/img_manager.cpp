@@ -18,7 +18,7 @@
 #include "../core/i18n.h"
 // CEGUI
 #include "CEGUIWindowManager.h"
-#include "elements/CEGUIProgressBar.h"
+#include "CEGUI/widgets/ProgressBar.h"
 
 namespace SMC
 {
