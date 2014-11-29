@@ -19,17 +19,14 @@
 #include "../core/global_basic.h"
 #include "../core/global_game.h"
 #include "../video/color.h"
-// glx
-#ifdef __unix__
-	//#include <GL/glx.h>
-#endif
+
 // SDL
 #include "SDL.h"
 #include "SDL_image.h"
 #ifdef __unix__
 	#define NO_SDL_GLEXT
 #endif
-#include "SDL_opengles.h"
+#include "SDL_opengles2.h"
 #ifdef __unix__
 	#undef NO_SDL_GLEXT
 #endif
@@ -256,10 +253,6 @@ public:
 
 	// window manager information
 	SDL_SysWMinfo wm_info;
-#ifdef __unix__
-	// current opengl context
-	//GLXContext glx_context;
-#endif
 	// rendering thread
 	boost::thread m_render_thread;
 
@@ -297,7 +290,7 @@ extern CEGUI::OpenGLESRenderer *pGuiRenderer;
 extern CEGUI::System *pGuiSystem;
 
 // Screen
-extern SDL_Surface *screen;
+extern SDL_Window *screen;
 
 /* *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** */
 

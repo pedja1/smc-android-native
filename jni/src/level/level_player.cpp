@@ -397,7 +397,7 @@ animation_end:
 				}
 			}
 
-			Uint8 *keys = SDL_GetKeyState( NULL );
+			Uint8 const *keys =  SDL_GetKeyboardState( NULL );
 			// Escape stops
 			if( keys[SDLK_ESCAPE] || keys[SDLK_RETURN] || keys[SDLK_SPACE] || keys[pPreferences->m_key_action] )
 			{
@@ -455,11 +455,11 @@ animation_end:
 
 	// fade out
 	Game_Action_Data_Start.add( "music_fadeout", "1500" );
-	Game_Action_Data_Start.add( "screen_fadeout", CEGUI::PropertyHelper::intToString( EFFECT_OUT_BLACK ) );
+	Game_Action_Data_Start.add( "screen_fadeout", CEGUI::PropertyHelper<int>::toString( EFFECT_OUT_BLACK ) );
 	Game_Action_Data_Start.add( "screen_fadeout_speed", "3" );
 	// delay unload level
 	Game_Action_Data_Middle.add( "unload_levels", "1" );
-	Game_Action_Data_End.add( "screen_fadein", CEGUI::PropertyHelper::intToString( EFFECT_IN_BLACK ) );
+	Game_Action_Data_End.add( "screen_fadein", CEGUI::PropertyHelper<int>::toString( EFFECT_IN_BLACK ) );
 }
 
 void cLevel_Player :: Move_Player( float velocity, float vel_wrongway )

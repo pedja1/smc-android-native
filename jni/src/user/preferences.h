@@ -85,9 +85,9 @@ public:
 
 	// Video
 	bool m_video_fullscreen;
-	Uint16 m_video_screen_w;
-	Uint16 m_video_screen_h;
-	Uint8 m_video_screen_bpp;
+	int m_video_screen_w;
+	int m_video_screen_h;
+	int m_video_screen_bpp;
 	bool m_video_vsync;
 	Uint16 m_video_fps_limit;
 

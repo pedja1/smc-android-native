@@ -211,6 +211,11 @@ public:
 	cSavegame_XML_Handler( const std::string &filename );
 	virtual ~cSavegame_XML_Handler( void );
 
+	const CEGUI::String& getDefaultResourceGroup() const
+	{
+		return NULL;
+	}
+
 	/* Returns the savegame data
 	 * The returned savegame should be deleted if not used anymore
 	*/

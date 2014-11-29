@@ -26,8 +26,8 @@
 #include "../core/sprite_manager.h"
 #include "../core/i18n.h"
 // CEGUI
-#include "CEGUIXMLAttributes.h"
-#include "CEGUIWindowManager.h"
+#include "CEGUI/XMLAttributes.h"
+#include "CEGUI/WindowManager.h"
 #include "CEGUI/widgets/Combobox.h"
 #include "CEGUI/widgets/ListboxTextItem.h"
 
@@ -481,7 +481,7 @@ void cBonusBox :: Editor_Activate( void )
 	combobox->addItem( new CEGUI::ListboxTextItem( "Bonus" ) );
 	combobox->addItem( new CEGUI::ListboxTextItem( "Power" ) );
 
-	combobox->setText( reinterpret_cast<const CEGUI::utf8*>(m_anim_type.c_str()) );
+	combobox->setText( m_anim_type.c_str() );
 
 	combobox->subscribeEvent( CEGUI::Combobox::EventListSelectionAccepted, CEGUI::Event::Subscriber( &cBonusBox::Editor_Animation_Select, this ) );
 
@@ -580,7 +580,7 @@ void cBonusBox :: Editor_State_Update( void )
 	CEGUI::WindowManager &wmgr = CEGUI::WindowManager::getSingleton();
 
 	// Force best item
-	CEGUI::Combobox *combobox = static_cast<CEGUI::Combobox *>(wmgr.getWindow( "editor_bonusbox_force_best_item" ));
+	CEGUI::Combobox *combobox = static_cast<CEGUI::Combobox *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild( "editor_bonusbox_force_best_item" ));
 
 	if( box_type == TYPE_UNDEFINED || box_type == TYPE_POWERUP || box_type == TYPE_MUSHROOM_DEFAULT || box_type == TYPE_MUSHROOM_LIVE_1 || box_type == TYPE_MUSHROOM_POISON || 
 		box_type == TYPE_MUSHROOM_GHOST || box_type == TYPE_STAR || box_type == TYPE_GOLDPIECE )
@@ -593,7 +593,7 @@ void cBonusBox :: Editor_State_Update( void )
 	}
 
 	// gold color
-	combobox = static_cast<CEGUI::Combobox *>(wmgr.getWindow( "editor_bonusbox_gold_color" ));
+	combobox = static_cast<CEGUI::Combobox *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild( "editor_bonusbox_gold_color" ));
 
 	if( box_type != TYPE_GOLDPIECE )
 	{

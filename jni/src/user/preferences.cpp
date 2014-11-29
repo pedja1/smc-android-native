@@ -70,7 +70,7 @@ const SDL_Keycode cPreferences::m_key_jump_default = SDLK_s;
 const SDL_Keycode cPreferences::m_key_shoot_default = SDLK_SPACE;
 const SDL_Keycode cPreferences::m_key_item_default = SDLK_RETURN;
 const SDL_Keycode cPreferences::m_key_action_default = SDLK_a;
-const SDL_Keycode cPreferences::m_key_screenshot_default = SDLK_PRINT;
+/*const SDL_Keycode cPreferences::m_key_screenshot_default = SDLK_PRINT;
 const SDL_Keycode cPreferences::m_key_editor_fast_copy_up_default = SDLK_KP8;
 const SDL_Keycode cPreferences::m_key_editor_fast_copy_down_default = SDLK_KP2;
 const SDL_Keycode cPreferences::m_key_editor_fast_copy_left_default = SDLK_KP4;
@@ -78,7 +78,7 @@ const SDL_Keycode cPreferences::m_key_editor_fast_copy_right_default = SDLK_KP6;
 const SDL_Keycode cPreferences::m_key_editor_pixel_move_up_default = SDLK_KP8;
 const SDL_Keycode cPreferences::m_key_editor_pixel_move_down_default = SDLK_KP2;
 const SDL_Keycode cPreferences::m_key_editor_pixel_move_left_default = SDLK_KP4;
-const SDL_Keycode cPreferences::m_key_editor_pixel_move_right_default = SDLK_KP6;
+const SDL_Keycode cPreferences::m_key_editor_pixel_move_right_default = SDLK_KP6;*/
 const float cPreferences::m_scroll_speed_default = 1.0f;
 // Joystick
 const bool cPreferences::m_joy_enabled_default = 1;
@@ -614,7 +614,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_up = static_cast<SDL_Keycode>(val);
 		}
@@ -623,7 +623,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_down = static_cast<SDL_Keycode>(val);
 		}
@@ -632,7 +632,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_left = static_cast<SDL_Keycode>(val);
 		}
@@ -641,7 +641,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_right = static_cast<SDL_Keycode>(val);
 		}
@@ -650,7 +650,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_jump = static_cast<SDL_Keycode>(val);
 		}
@@ -659,7 +659,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_shoot = static_cast<SDL_Keycode>(val);
 		}
@@ -668,7 +668,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_item = static_cast<SDL_Keycode>(val);
 		}
@@ -677,7 +677,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_action = static_cast<SDL_Keycode>(val);
 		}
@@ -690,7 +690,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_screenshot = static_cast<SDL_Keycode>(val);
 		}
@@ -699,7 +699,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_fast_copy_up = static_cast<SDL_Keycode>(val);
 		}
@@ -708,7 +708,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_fast_copy_down = static_cast<SDL_Keycode>(val);
 		}
@@ -717,7 +717,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_fast_copy_left = static_cast<SDL_Keycode>(val);
 		}
@@ -726,7 +726,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_fast_copy_right = static_cast<SDL_Keycode>(val);
 		}
@@ -735,7 +735,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_pixel_move_up = static_cast<SDL_Keycode>(val);
 		}
@@ -744,7 +744,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_pixel_move_down = static_cast<SDL_Keycode>(val);
 		}
@@ -753,7 +753,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_pixel_move_left = static_cast<SDL_Keycode>(val);
 		}
@@ -762,7 +762,7 @@ void cPreferences :: handle_item( CEGUI::XMLAttributes attributes )
 	{
 		int val = attributes.getValueAsInteger( "value" );
 
-		if( val >= 0 && val <= SDLK_LAST )
+		//if( val >= 0 && val <= SDLK_LAST )
 		{
 			m_key_editor_pixel_move_right = static_cast<SDL_Keycode>(val);
 		}

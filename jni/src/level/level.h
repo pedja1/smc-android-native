@@ -37,6 +37,11 @@ public:
 	cLevel( void );
 	virtual ~cLevel( void );
 
+	const CEGUI::String& getDefaultResourceGroup() const
+	{
+		return NULL;
+	}
+
 	/* Create a new level
 	 * returns true if successful
 	*/

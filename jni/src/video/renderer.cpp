@@ -214,7 +214,7 @@ void cLine_Request :: Draw( void )
 	// color
 	if( m_color.red != 255 || m_color.green != 255 || m_color.blue != 255 || m_color.alpha != 255 )
 	{
-		glColor4ub( m_color.red, m_color.green, m_color.blue, m_color.alpha );
+		glColor4f( m_color.red, m_color.green, m_color.blue, m_color.alpha );
 	}
 
 	if( glIsEnabled( GL_TEXTURE_2D ) )
@@ -314,7 +314,7 @@ void cRect_Request :: Draw( void )
 	// color
 	if( m_color.red != 255 || m_color.green != 255 || m_color.blue != 255 || m_color.alpha != 255 )
 	{
-		glColor4ub( m_color.red, m_color.green, m_color.blue, m_color.alpha );
+		glColor4f( m_color.red, m_color.green, m_color.blue, m_color.alpha );
 	}
 
 	if( glIsEnabled( GL_TEXTURE_2D ) )
@@ -415,10 +415,10 @@ void cGradient_Request :: Draw( void )
 	if( m_dir == DIR_VERTICAL )
 	{
 		glBegin( GL_POLYGON );
-			glColor4ub( m_color_1.red, m_color_1.green, m_color_1.blue, m_color_1.alpha );
+			glColor4f( m_color_1.red, m_color_1.green, m_color_1.blue, m_color_1.alpha );
 			glVertex2f( 0.0f, 0.0f );
 			glVertex2f( m_rect.m_w, 0.0f );
-			glColor4ub( m_color_2.red, m_color_2.green, m_color_2.blue, m_color_2.alpha );
+			glColor4f( m_color_2.red, m_color_2.green, m_color_2.blue, m_color_2.alpha );
 			glVertex2f( m_rect.m_w, m_rect.m_h );
 			glVertex2f( 0.0f, m_rect.m_h );
 		glEnd();
@@ -427,10 +427,10 @@ void cGradient_Request :: Draw( void )
 	else if( m_dir == DIR_HORIZONTAL )
 	{
 		glBegin( GL_POLYGON );
-			glColor4ub( m_color_1.red, m_color_1.green, m_color_1.blue, m_color_1.alpha );
+			glColor4f( m_color_1.red, m_color_1.green, m_color_1.blue, m_color_1.alpha );
 			glVertex2f( 0.0f, m_rect.m_h );
 			glVertex2f( 0.0f, 0.0f );
-			glColor4ub( m_color_2.red, m_color_2.green, m_color_2.blue, m_color_2.alpha );
+			glColor4f( m_color_2.red, m_color_2.green, m_color_2.blue, m_color_2.alpha );
 			glVertex2f( m_rect.m_w, 0.0f );
 			glVertex2f( m_rect.m_w, m_rect.m_h );
 		glEnd();
@@ -481,7 +481,7 @@ void cCircle_Request :: Draw( void )
 	// color
 	if( m_color.red != 255 || m_color.green != 255 || m_color.blue != 255 || m_color.alpha != 255 )
 	{
-		glColor4ub( m_color.red, m_color.green, m_color.blue, m_color.alpha );
+		glColor4f( m_color.red, m_color.green, m_color.blue, m_color.alpha );
 	}
 
 	if( glIsEnabled( GL_TEXTURE_2D ) )
@@ -650,7 +650,7 @@ void cSurface_Request :: Draw( void )
 	// color
 	if( m_color.red != 255 || m_color.green != 255 || m_color.blue != 255 || m_color.alpha != 255 )
 	{
-		glColor4ub( m_color.red, m_color.green, m_color.blue, m_color.alpha );
+		glColor4f( m_color.red, m_color.green, m_color.blue, m_color.alpha );
 	}
 
 	if( !glIsEnabled( GL_TEXTURE_2D ) )

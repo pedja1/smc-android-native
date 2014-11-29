@@ -18,6 +18,8 @@
 
 #include "../core/global_basic.h"
 #include "../core/global_game.h"
+#include <map>
+#include "CEGUI/InputEvent.h"
 // SDL
 #include "SDL.h"
 
@@ -75,7 +77,7 @@ public:
 	};
 
 	// Translate a SDLKey to the proper CEGUI::Key
-	unsigned int SDLKey_to_CEGUIKey( const SDL_Keycode key ) const;
+	CEGUI::Key::Scan SDLKey_to_CEGUIKey( const SDL_Keycode key ) const;
 
 	// Pressed keys
 	//Uint8 m_keys[SDLK_LAST];

@@ -992,7 +992,7 @@ void cDebugDisplay :: Update( void )
 		// add newlines
 		text_height *= 1 + std::count(m_text.begin(), m_text.end(), '\n');
 
-		m_text_debug_text->setSize( CEGUI::UVector2( CEGUI::UDim( 0, ( text_width + 15 ) * global_upscalex ), CEGUI::UDim( 0, ( text_height + 15 ) * global_upscaley ) ) );
+		m_text_debug_text->setSize( CEGUI::USize( CEGUI::UDim( 0, ( text_width + 15 ) * global_upscalex ), CEGUI::UDim( 0, ( text_height + 15 ) * global_upscaley ) ) );
 		m_text_debug_text->setXPosition( CEGUI::UDim( 0, ( ( game_res_w * 0.5f ) - text_width * 0.5f ) * global_upscalex ) );
 	}
 }

@@ -29,8 +29,8 @@
 #include "../enemies/bosses/turtle_boss.h"
 #include "../gui/hud.h"
 // CEGUI
-#include "CEGUIXMLAttributes.h"
-#include "CEGUIWindowManager.h"
+#include "CEGUI/XMLAttributes.h"
+#include "CEGUI/WindowManager.h"
 #include "CEGUI/widgets/Editbox.h"
 #include "CEGUI/widgets/Combobox.h"
 #include "CEGUI/widgets/ListboxTextItem.h"

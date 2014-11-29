@@ -27,7 +27,7 @@
 #include "../objects/path.h"
 #include "../input/mouse.h"
 // CEGUI
-#include "CEGUIWindowManager.h"
+#include "CEGUI/WindowManager.h"
 #include "CEGUI/widgets/Combobox.h"
 #include "CEGUI/widgets/ListboxTextItem.h"
 #include "CEGUI/widgets/Editbox.h"
@@ -1197,11 +1197,11 @@ void cMoving_Platform :: Editor_State_Update( void )
 	CEGUI::WindowManager &wmgr = CEGUI::WindowManager::getSingleton();
 
 	// path identifier
-	CEGUI::Editbox *editbox_path_identifier = static_cast<CEGUI::Editbox *>(wmgr.getWindow( "editor_moving_platform_path_identifier" ));
+	CEGUI::Editbox *editbox_path_identifier = static_cast<CEGUI::Editbox *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild("editor_moving_platform_path_identifier" ));
 	// direction
-	CEGUI::Combobox *combobox_direction = static_cast<CEGUI::Combobox *>(wmgr.getWindow( "editor_moving_platform_direction" ));
+	CEGUI::Combobox *combobox_direction = static_cast<CEGUI::Combobox *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild( "editor_moving_platform_direction" ));
 	// max distance
-	CEGUI::Editbox *editbox_max_distance = static_cast<CEGUI::Editbox *>(wmgr.getWindow( "editor_moving_platform_max_distance" ));
+	CEGUI::Editbox *editbox_max_distance = static_cast<CEGUI::Editbox *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild( "editor_moving_platform_max_distance" ));
 
 	if( m_move_type == MOVING_PLATFORM_TYPE_PATH || m_move_type == MOVING_PLATFORM_TYPE_PATH_BACKWARDS )
 	{

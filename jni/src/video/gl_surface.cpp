@@ -165,7 +165,8 @@ void cGL_Surface :: Save( const std::string &filename )
 	// create image data
 	GLubyte *data = new GLubyte[m_tex_w * m_tex_h * 4];
 	// read texture
-	glGetTexImage( GL_TEXTURE_2D, 0, GL_RGBA, GL_UNSIGNED_BYTE, static_cast<GLvoid *>(data) );
+	//glGetTexImage( GL_TEXTURE_2D, 0, GL_RGBA, GL_UNSIGNED_BYTE, static_cast<GLvoid *>(data) );
+	//TODO how to do it in gles
 	// save
 	pVideo->Save_Surface( filename, data, m_tex_w, m_tex_h );
 	// clear data

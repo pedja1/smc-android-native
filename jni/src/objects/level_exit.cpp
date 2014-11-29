@@ -27,8 +27,8 @@
 #include "../core/i18n.h"
 #include "../core/filesystem/filesystem.h"
 // CEGUI
-#include "CEGUIXMLAttributes.h"
-#include "CEGUIWindowManager.h"
+#include "CEGUI/XMLAttributes.h"
+#include "CEGUI/WindowManager.h"
 #include "CEGUI/widgets/Editbox.h"
 #include "CEGUI/widgets/Combobox.h"
 #include "CEGUI/widgets/ListboxTextItem.h"
@@ -523,9 +523,9 @@ void cLevel_Exit :: Editor_State_Update( void )
 	CEGUI::WindowManager &wmgr = CEGUI::WindowManager::getSingleton();
 
 	// path identifier
-	CEGUI::Editbox *editbox_path_identifier = static_cast<CEGUI::Editbox *>(wmgr.getWindow( "level_exit_path_identifier" ));
+	CEGUI::Editbox *editbox_path_identifier = static_cast<CEGUI::Editbox *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild( "level_exit_path_identifier" ));
 	// destination level
-	CEGUI::Editbox *editbox_destination_level = static_cast<CEGUI::Editbox *>(wmgr.getWindow( "level_exit_destination_level" ));
+	CEGUI::Editbox *editbox_destination_level = static_cast<CEGUI::Editbox *>(pGuiSystem->getDefaultGUIContext().getRootWindow()->getChild("level_exit_destination_level" ));
 	// direction
 	//CEGUI::Combobox *combobox_direction = static_cast<CEGUI::Combobox *>(wmgr.getWindow( "level_exit_direction" ));
 

@@ -24,7 +24,7 @@
 #include "../audio/audio.h"
 #include "../level/level.h"
 // CEGUI
-#include "CEGUIWindowManager.h"
+#include "CEGUI/WindowManager.h"
 #include "CEGUI/widgets/MultiLineEditbox.h"
 #include "CEGUI/widgets/Scrollbar.h"
 
@@ -108,7 +108,7 @@ void cText_Box :: Activate( void )
 	CEGUI::MultiLineEditbox *editbox = static_cast<CEGUI::MultiLineEditbox *>(wmgr.createWindow( "TaharezLook/MultiLineEditbox", "text_box_text" ));
 
 	// add to main window
-	pGuiSystem->getGUISheet()->addChildWindow( editbox );
+	pGuiSystem->getDefaultGUIContext().getRootWindow()->addChild( editbox );
 
 
 	// set on top
@@ -137,7 +137,7 @@ void cText_Box :: Activate( void )
 	editbox->setHeight( CEGUI::UDim( 0, text_box_window_height * global_upscaley ) );
 
 	// set text
-	editbox->setText( reinterpret_cast<const CEGUI::utf8*>(m_text.c_str()) );
+	editbox->setText( m_text.c_str() );
 	// always hide horizontal scrollbar
 	editbox->getHorzScrollbar()->hide();
 
@@ -199,7 +199,7 @@ void cText_Box :: Activate( void )
 			}
 		}
 
-		Uint8 *keys = SDL_GetKeyState( NULL );
+		Uint8 const *keys =  SDL_GetKeyboardState( NULL );
 		Sint16 joy_ver_axis = 0;
 
 		// if joystick enabled
@@ -273,7 +273,7 @@ void cText_Box :: Editor_Activate( void )
 	CEGUI::MultiLineEditbox *editbox = static_cast<CEGUI::MultiLineEditbox *>(wmgr.createWindow( "TaharezLook/MultiLineEditbox", "text_box_text" ));
 	Editor_Add( UTF8_("Text"), UTF8_("Text to display when activated"), editbox, static_cast<float>(text_box_window_width), static_cast<float>(text_box_window_height) );
 
-	editbox->setText( reinterpret_cast<const CEGUI::utf8*>(m_text.c_str()) );
+	editbox->setText(m_text.c_str() );
 	editbox->subscribeEvent( CEGUI::MultiLineEditbox::EventTextChanged, CEGUI::Event::Subscriber( &cText_Box::Editor_Text_Text_Changed, this ) );
 
 	// init
